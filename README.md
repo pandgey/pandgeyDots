@@ -1,4 +1,12 @@
-# my_ARCH_settings
-This repo is for pandgey to store their personal WM and DE
+# dots
 
---------------------------------------------------------------------------------------
+Pandgey's Hyprland config
+
+- OS: EndeavourOS
+- DE: Hyprland
+- Bar: Waybar
+- Terminal: Kitty
+- Shell: zsh
+- Fetch: fastfetch
+- Visualizer: cava
+- Text Editor: Neovim

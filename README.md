@@ -6,6 +6,7 @@ Pandgey's Hyprland config
 - DE: Hyprland
 - Bar: Waybar
 - Terminal: Kitty
+- App launcher: rofi
 - Shell: zsh
 - Fetch: fastfetch
 - Visualizer: cava

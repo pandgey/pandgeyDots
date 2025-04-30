@@ -10,3 +10,9 @@ Pandgey's Hyprland config
 - Fetch: fastfetch
 - Visualizer: cava
 - Text Editor: Neovim
+
+# Showcase
+
+![Hyprland desktop](asset/screenshot_1746024295.png)
+
+![Hyprland with terminal and Cava](asset/screenshot_1746024561.png)

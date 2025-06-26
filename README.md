@@ -17,3 +17,5 @@ Pandgey's Hyprland config
 ![Hyprland desktop](asset/screenshot_1746024295.png)
 
 ![Hyprland with terminal and Cava](asset/screenshot_1746024561.png)
+
+ps. I will update the showcase pic soon!

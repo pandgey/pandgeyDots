@@ -14,6 +14,6 @@ Pandgey's Hyprland config
 
 # Showcase
 
-![showcase1](asset/showcase1.png)
+![showcase1](assets/showcase1.png)
 
-![showcase2](asset/showcase2.png)
+![showcase2](assets/showcase2.png)

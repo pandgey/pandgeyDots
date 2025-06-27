@@ -14,8 +14,6 @@ Pandgey's Hyprland config
 
 # Showcase
 
-![Hyprland desktop](asset/screenshot_1746024295.png)
+![showcase1](asset/showcase1.png)
 
-![Hyprland with terminal and Cava](asset/screenshot_1746024561.png)
-
-ps. I will update the showcase pic soon!
+![showcase2](asset/showcase2.png)

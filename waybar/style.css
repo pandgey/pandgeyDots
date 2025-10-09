@@ -1,123 +1,183 @@
+/* -- Global rules -- */
 * {
-  /* General taskbar font, I like maple mono ^-^*/
-  font-family: Maple Mono;
-  border-radius: 8;
-  font-size: 13px;
-  padding: 0px;
-  background: transparent;
+  border: none;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 15px;
+  min-height: 10px;
 }
 
 window#waybar {
-  /* Linear gradients are used because it makes less harsh rounded border radius, gtk bug :p */
-  background-color: rgba(20, 18, 22, 0.7);
-
-  border-radius: 14px;
-  padding: 0px;
-  border-style: none;
+  background: rgba(34, 36, 54, 0.6);
 }
 
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* - Genera rules for visible modules -- */
+#custom-archicon,
+#clock,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#idle_inhibitor,
+#pulseaudio,
 #battery,
 #network,
+#language {
+  color: #161320;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: none;
+}
+
+/* Separation to the left */
+#custom-archicon,
+#cpu,
+#battery {
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Separation to the rigth */
 #clock,
-#custom-applauncher,
-#tray,
-#workspaces,
-#pulseaudio {
-  background-color: rgba(20, 18, 22, 0.2);
-
-  margin: 6px;
-  margin-right: 0px;
-  padding: 2px 8px;
-  border-radius: 8px;
-  color: #d8cab8;
-
-  border-style: solid;
-  border-color: #d8cab8;
-  border-width: 1px;
-
-  transition-duration: 120ms;
+#temperature,
+#language {
+  margin-right: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-/*  */
+/* -- Specific styles -- */
+
+/* Modules left */
+#custom-archicon {
+  font-size: 20px;
+  color: #89B4FA;
+  background: #161320;
+  padding-right: 17px;
+}
+
 #clock {
-  margin-right: 6px;
+  background: #ABE9B3;
 }
 
-#clock:hover {
-  background-color: rgba(20, 18, 22, 0.7);
-  color: #d8cab8;
+#cpu {
+  background: #96CDFB;
 }
 
-#pulseaudio:hover {
-  background-color: rgba(20, 18, 22, 0.7);
-  color: #d8cab8;
-  transition-duration: 120ms;
+#memory {
+  background: #DDB6F2;
 }
 
-#custom-applauncher {
-  font-weight: bold;
-  transition-duration: 120ms;
-  padding: 0px 25px 0px 25px;
-}
-#custom-applauncher:hover {
-  background-color: rgba(20, 18, 22, 0.7);
-  color: #d8cab8;
-  transition-duration: 120ms;
+#disk {
+  background: #F5C2E7;
 }
 
-#tray menu {
-  background-color: #141216;
-  color: #d8cab8;
-  padding: 4px;
+#temperature {
+  background: #F8BD96;
 }
-#tray menu menuitem {
-  background-image: linear-gradient(to bottom, #27232b 100%);
 
-  margin: 3px;
-  color: #d8cab8;
-  border-radius: 4px;
-  border-style: solid;
-  border-color: #27232b;
+#temperature.critical {
+  background-color: #fc4649;
 }
-#tray menu menuitem:hover {
-  background-image: linear-gradient(to bottom, #27232b 100%);
-  color: #ac82e9;
-  font-weight: bold;
+
+/* Modules center */
+#workspaces {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 6px 5px;
+  padding: 0px 6px;
 }
 
 #workspaces button {
-  transition-duration: 100ms;
-  all: initial;
-  min-width: 0;
-  font-weight: bold;
-  color: #d8cab8;
-  margin-right: 0.2cm;
-  margin-left: 0.2cm;
+  color: #B5E8E0;
+  background: transparent;
+  padding: 4px 4px;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
-#workspaces button:hover {
-  transition-duration: 120ms;
-  color: #8f56e1;
+#workspaces button.occupied {
+  color: #A6E3A1;
 }
-#workspaces button.focused {
-  color: #ac82e9;
-  font-weight: bold;
-}
+
 #workspaces button.active {
-  color: #ac82e9;
-  font-weight: bold;
+  color: #89B4FA;
+  text-shadow: 0 0 4px #ABE9B3;
 }
+
 #workspaces button.urgent {
   color: #fcb167;
 }
 
-#battery {
-  background-color: #222222;
-  color: #ac82e9;
+#workspaces button:hover {
+  color: #89B4FA;
+}
+
+#workspaces button.active:hover {}
+
+/* Modules right */
+#taskbar {
+  background: transparent;
+  border-radius: 10px;
+  padding: 0px 5px;
+  margin: 6px 5px;
+}
+
+#taskbar button {
+  padding: 0px 5px;
+  margin: 0px 3px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#taskbar button.active {
+  background: rgba(34, 36, 54, 0.5);
+}
+
+#taskbar button:hover {
+  background: rgba(34, 36, 54, 0.5);
+}
+
+#pulseaudio {
+  min-width: 55px;
+  color: #1A1826;
+  background: #F5E0DC;
+}
+
+#battery{
+  color: #1A1826;
+  background-color: #B5E8E0;
+  min-width: 50px;
+  padding-right: 15px;
 }
 #battery.warning,
 #battery.critical,
 #battery.urgent {
   color: #1d2021;
   background-color: #fc4649;
+  min-width: 50px;
+  padding-right: 15px;
+}
+
+#network {
+  background: #CBA6F7;
+  padding-right: 13px;
+}
+
+#language {
+  background: #A6E3A1;
+  padding-right: 15px;
+}
+
+/* === Optional animation === */
+@keyframes blink {
+  to {
+    background-color: #BF616A;
+    color: #B5E8E0;
+  }
 }

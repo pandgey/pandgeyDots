@@ -20,8 +20,16 @@ Pandgey's Hyprland config
 
 # Installation
 
-Assuming you are using Arch based and using pacman
+Assuming you are using Arch based and using yay as AUR
+1. Install dependencies
+```bash
+yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi
+```
+2. Clone new configuration
+```bash
+cd Downloads/
+git clone https://github.com/pandgey/pandgeyDots.git
+```
+3. Copy all the stuff that you need
 
-'''bash
-
-'''
+Awesome! You now have your very WM!

@@ -17,3 +17,11 @@ Pandgey's Hyprland config
 ![showcase1](assets/showcase1.png)
 
 ![showcase2](assets/showcase2.png)
+
+# Installation
+
+Assuming you are using Arch based and using pacman
+
+'''bash
+
+'''

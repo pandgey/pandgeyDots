@@ -47,6 +47,7 @@
   "memory": {
     "format": "{}% 󰍛",
     "tooltip": true,
+    "interval": 5,
     "tooltip-format": "RAM usage: {used} / {total} ({percentage}%)"
   },
   "disk": {
@@ -59,6 +60,7 @@
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
     "tooltip": true,
+    "interval": 5,
     "tooltip-format": "CPU Temperature: {temperatureC}°C",
     "format-icons": [
       ""
@@ -119,13 +121,10 @@
     "on-click": "pavucontrol"
   },
   "network": {
-    "format": "{ifname}",
-    "format-ethernet": "{ifname} 󰈀",
-    "format-disconnected": " ",
-    "tooltip-format": " {ifname} via {gwaddr}",
-    "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
+    "format-wifi": "  {bandwidthDownBits}",
+    "format-ethernet": "  {bandwidthDownBits}",
+    "format-disconnected": "󰤮  No Network",
+    "interval": 5,    
     "on-click": "kitty -e nmtui"
   },
   "hyprland/language": {

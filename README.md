@@ -20,7 +20,7 @@ Pandgey's Hyprland config
 
 # Installation
 
-Assuming you are using Arch based and using yay as AUR
+Assuming you are using Arch-based OS and (probably) using yay as AUR
 1. Install dependencies
 ```bash
 yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi
@@ -32,4 +32,4 @@ git clone https://github.com/pandgey/pandgeyDots.git
 ```
 3. Copy all the stuff that you need
 
-Awesome! You now have your very WM!
+Awesome! You now have your very WM (or mine at least ._.)!

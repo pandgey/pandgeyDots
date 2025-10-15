@@ -112,6 +112,7 @@
   },
   "custom/power-profile": {
   "exec": "case $(powerprofilesctl get) in performance) echo '󰓅 Performance';; balanced) echo '󰾅 Balanced';; power-saver) echo '󰾆 Power Saver';; esac",
+  "interval": 2,
   "on-click": "current=$(powerprofilesctl get); if [ \"$current\" = \"performance\" ]; then powerprofilesctl set balanced; elif [ \"$current\" = \"balanced\" ]; then powerprofilesctl set power-saver; else powerprofilesctl set performance; fi",
     "format": "{icon} {text}"
   },

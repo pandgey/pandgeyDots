@@ -21,6 +21,7 @@
   "modules-right": [
     "wlr/taskbar",
     "battery",
+    "custom/power-profile",
     "pulseaudio",
     "network",
     "hyprland/language"
@@ -32,7 +33,7 @@
     "tooltip": false
   },
   "clock": {
-    "timezone": "Melbourne",
+    "timezone": "AU",
     "format": "{:%H:%M  %d, %m}",
     "tooltip-format": "{calendar}",
     "calendar": {
@@ -109,6 +110,11 @@
       "󱊣"
     ]
   },
+  "custom/power-profile": {
+  "exec": "case $(powerprofilesctl get) in performance) echo '󰓅 Performance';; balanced) echo '󰾅 Balanced';; power-saver) echo '󰾆 Power Saver';; esac",
+  "on-click": "current=$(powerprofilesctl get); if [ \"$current\" = \"performance\" ]; then powerprofilesctl set balanced; elif [ \"$current\" = \"balanced\" ]; then powerprofilesctl set power-saver; else powerprofilesctl set performance; fi",
+    "format": "{icon} {text}"
+  },
   "pulseaudio": {
     "format": "{volume}% {icon}",
     "format-muted": " {format_source}",
@@ -130,7 +136,7 @@
   "hyprland/language": {
     "format": "{} ",
     "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
-    "format-es": "ESP",
+    "format-th": "TH",
     "format-en": "ENG"
   }
 }

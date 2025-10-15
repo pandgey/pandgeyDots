@@ -181,3 +181,12 @@ window#waybar.hidden {
     color: #B5E8E0;
   }
 }
+#custom-power-profile {
+  color: #161320;
+  background: #e8a2af;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: none;
+}

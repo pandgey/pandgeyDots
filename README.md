@@ -32,4 +32,4 @@ git clone https://github.com/pandgey/pandgeyDots.git
 ```
 3. Copy all the stuff that you need
 
-Awesome! You now have your very WM (or mine at least ._.)!
+Awesome! You now have your very WM (or mine at least :D )!

@@ -32,12 +32,19 @@
     "on-click": "rofi -show drun",
     "tooltip": false
   },
+
+  /* Use Asia/Bangkok if you want to switch to Thailand time */
+  /* Use Australia/Victoria for Australia */
   "clock": {
-    "timezone": "AU",
+    "timezone": "Australia/Victoria",
     "format": "{:%H:%M  %d, %m}",
     "tooltip-format": "{calendar}",
     "calendar": {
-      "mode": "month"
+      "mode": "month",
+      "format": {
+        "months": "<span color='#ff6699'><b>{}</b></span>",
+        "today": "<span color='#ffcc66'><b>{}</b></span>"
+      }
     }
   },
   "cpu": {

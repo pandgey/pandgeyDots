@@ -33,3 +33,7 @@ git clone https://github.com/pandgey/pandgeyDots.git
 3. Copy all the stuff that you need
 
 Awesome! You now have your very WM (or mine at least :D )!
+
+# Grub
+
+I use this [grub](https://github.com/jacksaur/Gorgeous-GRUB?tab=readme-ov-file). It has lots of stuff, design and options there. Pick one that suits you! Everyone say "Thank you, Jacksaur!".

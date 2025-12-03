@@ -36,4 +36,4 @@ Awesome! You now have your very WM (or mine at least :D )!
 
 # Grub
 
-I use this [grub](https://github.com/jacksaur/Gorgeous-GRUB?tab=readme-ov-file). It has lots of stuff, design and options there. Pick one that suits you! Everyone say "Thank you, Jacksaur!".
+I use this [grub](https://github.com/jacksaur/Gorgeous-GRUB?tab=readme-ov-file). It has lots of stuff, design and options there. Pick one that suits you! Everyone say "Thank you, Jacksaur!". Currently, Im using the lobotomy corporation theme :D idk i like the color

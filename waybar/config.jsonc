@@ -36,7 +36,7 @@
   /* Use Asia/Bangkok if you want to switch to Thailand time */
   /* Use Australia/Victoria for Australia */
   "clock": {
-    "timezone": "Australia/Victoria",
+    "timezone": "Asia/Bangkok",
     "format": "{:%H:%M  %d, %m}",
     "tooltip-format": "{calendar}",
     "calendar": {
@@ -123,16 +123,20 @@
   "on-click": "current=$(powerprofilesctl get); if [ \"$current\" = \"performance\" ]; then powerprofilesctl set balanced; elif [ \"$current\" = \"balanced\" ]; then powerprofilesctl set power-saver; else powerprofilesctl set performance; fi",
     "format": "{icon} {text}"
   },
-  "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-muted": " {format_source}",
-    "format-icons": {
-      "default": [
-        "",
-        ""
-      ]
-    },
-    "on-click": "pavucontrol"
+    "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "nospacing": 1,
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "tooltip": false
   },
   "network": {
     "format-wifi": "  {bandwidthDownBits}",

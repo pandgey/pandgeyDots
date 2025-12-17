@@ -2,15 +2,16 @@
 
 Pandgey's Hyprland config
 
-- OS: EndeavourOS
-- DE: Hyprland
-- Bar: Waybar
-- Terminal: Kitty
+- OS: endeavourOS
+- DE: hyprland
+- Bar: waybar
+- Terminal: kitty
 - App launcher: rofi
 - Shell: zsh
 - Fetch: fastfetch
 - Visualizer: cava
-- Text Editor: Neovim
+- Text Editor: neovim
+- File manager: nemo
 
 # Showcase
 
@@ -23,7 +24,7 @@ Pandgey's Hyprland config
 Assuming you are using Arch-based OS and (probably) using yay as AUR
 1. Install dependencies
 ```bash
-yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi
+yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi nemo
 ```
 2. Clone new configuration
 ```bash

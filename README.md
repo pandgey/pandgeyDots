@@ -24,7 +24,7 @@ Pandgey's Hyprland config
 Assuming you are using Arch-based OS and (probably) using yay as AUR
 1. Install dependencies
 ```bash
-yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi nemo grim slurp
+yay -S hyprland hyprpaper waybar xdg-desktop-portal-hyprland pavucontrol ttf-fira-sans ttf-font-awesome ttf-jetbrains-mono-nerd kitty cava fastfetch rofi nemo grim slurp wl-clipboard
 ```
 2. Clone new configuration
 ```bash

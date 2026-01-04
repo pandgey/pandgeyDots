@@ -190,3 +190,13 @@ window#waybar.hidden {
   padding-right: 10px;
   transition: none;
 }
+
+#bluetooth {
+  color: #161320;
+  background: #b4befe;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: none;
+}

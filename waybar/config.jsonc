@@ -22,6 +22,7 @@
     "wlr/taskbar",
     "battery",
     "custom/power-profile",
+    "bluetooth",
     "pulseaudio",
     "network",
     "hyprland/language"
@@ -123,7 +124,19 @@
   "on-click": "current=$(powerprofilesctl get); if [ \"$current\" = \"performance\" ]; then powerprofilesctl set balanced; elif [ \"$current\" = \"balanced\" ]; then powerprofilesctl set power-saver; else powerprofilesctl set performance; fi",
     "format": "{icon} {text}"
   },
-    "pulseaudio": {
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-off": "BT-off",
+    "format-disabled": "󰂲",
+    "format-connected-battery": "{device_battery_percentage}% 󰂯",
+    "format-alt": "{device_alias} 󰂯",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+    "on-click": "kitty bluetui"
+  },
+  "pulseaudio": {
     "scroll-step": 5,
     "max-volume": 150,
     "format": "{icon} {volume}%",

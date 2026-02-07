@@ -1,0 +1,241 @@
+/* Pastel Theme for SwayNC - Transparent with Blur */
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+}
+
+/* Color Variables */
+@define-color bg-primary rgba(30, 30, 46, 0.8);
+@define-color bg-secondary rgba(30, 30, 46, 0.8);
+@define-color accent-peach #FFD8B8;
+@define-color accent-lavender #E6E6FA;
+@define-color accent-mint #B2F9E8;
+@define-color text-primary #FFFFFF;
+@define-color text-secondary #E0E0E0;
+@define-color border-color rgba(230, 230, 250, 0.3);
+
+/* Control Center */
+.control-center {
+  background: rgba(30, 30, 46, 0.8);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 16px;
+  border: 2px solid @accent-peach;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  margin: 10px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+/* Notification Window */
+.notification-row {
+  outline: none;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: rgba(255, 216, 184, 0.15);
+  border-radius: 12px;
+}
+
+.notification {
+  background: rgba(30, 30, 46, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: 2px solid @accent-peach;
+  padding: 12px;
+  margin: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.notification-content {
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.notification-default-action {
+  background: transparent;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* Close Button */
+.close-button {
+  background: rgba(255, 180, 180, 0.5);
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 6px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.close-button:hover {
+  background: rgba(255, 150, 150, 0.7);
+}
+
+/* Summary and Body */
+.summary {
+  font-size: 15px;
+  font-weight: 700;
+  color: @text-primary;
+  margin-bottom: 4px;
+}
+
+.body {
+  font-size: 13px;
+  color: @text-secondary;
+  margin-top: 4px;
+}
+
+/* Time */
+.time {
+  font-size: 11px;
+  color: @text-secondary;
+  margin-top: 4px;
+}
+
+/* Title Widget */
+.widget-title {
+  background: transparent;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: @text-primary;
+}
+
+.widget-title > button {
+  background: rgba(178, 249, 232, 0.5);
+  backdrop-filter: blur(10px);
+  color: @text-primary;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(178, 249, 232, 0.3);
+}
+
+.widget-title > button:hover {
+  background: rgba(178, 249, 232, 0.7);
+}
+
+/* DND Widget */
+.widget-dnd {
+  background: transparent;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 10px;
+  color: @text-primary;
+}
+
+.widget-dnd > switch {
+  background: rgba(100, 100, 120, 0.5);
+  border-radius: 20px;
+  border: 2px solid @border-color;
+  min-width: 50px;
+  min-height: 28px;
+}
+
+.widget-dnd > switch:checked {
+  background: rgba(255, 216, 184, 0.6);
+  border-color: @accent-peach;
+}
+
+.widget-dnd > switch slider {
+  background: white;
+  border-radius: 50%;
+  border: 1px solid @border-color;
+}
+
+/* Icons */
+.notification-icon {
+  margin-right: 12px;
+  border-radius: 8px;
+}
+
+.notification-app-icon {
+  margin-right: 8px;
+}
+
+/* Image */
+.image {
+  margin: 8px;
+  border-radius: 10px;
+}
+
+/* Urgency Levels */
+.low {
+  border: 2px solid @accent-mint;
+}
+
+.normal {
+  border: 2px solid @accent-peach;
+}
+
+.critical {
+  border: 2px solid rgba(255, 180, 180, 0.8);
+  background: rgba(80, 40, 40, 0.8);
+  backdrop-filter: blur(15px);
+}
+
+/* Blank Window */
+.blank-window {
+  background: transparent;
+}
+
+/* Scrollbar */
+scrollbar {
+  background: transparent;
+  border-radius: 8px;
+  width: 8px;
+}
+
+scrollbar trough {
+  background: rgba(100, 100, 120, 0.3);
+  border-radius: 8px;
+}
+
+scrollbar slider {
+  background: rgba(230, 230, 250, 0.5);
+  border-radius: 8px;
+  min-height: 40px;
+}
+
+scrollbar slider:hover {
+  background: rgba(230, 230, 250, 0.7);
+}
+
+/* Buttons */
+button {
+  background: rgba(255, 216, 184, 0.5);
+  backdrop-filter: blur(10px);
+  color: @text-primary;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin: 4px;
+  border: 1px solid rgba(255, 216, 184, 0.3);
+  font-weight: 600;
+}
+
+button:hover {
+  background: rgba(255, 216, 184, 0.7);
+}
+
+/* Animations */
+.notification {
+  transition: all 200ms ease-in-out;
+}
+
+.control-center {
+  transition: all 200ms ease-in-out;
+}
